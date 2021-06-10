@@ -1,0 +1,28 @@
+<script>
+function fun() {
+
+//console.log("hello");
+const data=fetch('https://api.github.com/users')
+
+
+return data;
+
+}
+//alert(fun())
+console.log(fun())
+</script>
+<script>
+function chakachaka() {
+  const data2 = fetch('https://api.github.com/users').then((resp)=>{
+        return resp.text()
+    }).then((dance)=>{
+        console.log(dance)
+    })
+    return data2;
+}
+
+
+console.log(chakachaka())
+
+
+</script>
