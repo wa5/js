@@ -1,0 +1,13 @@
+<script>
+   async function mgril() {
+    console.log("1 feching data")
+ const data= await  fetch('https://api.github.com/users')
+ console.log(data)
+ console.log("3before feching data")
+ const data2= await data.json();
+ return data2
+   }
+   let padma=mgril();
+   console.log(padma)
+   padma.then((gaga)=>{console.log(gaga)})
+</script>
