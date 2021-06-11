@@ -1,0 +1,16 @@
+<script>
+let myprommiss= new Promise(function(resove,reject) {
+    setTimeout(function() {
+        resove("tq for resolving");
+
+    },3000);
+})
+
+myprommiss.then((data)=>{
+    // console.log(data)
+    document.getElementById('jj').innerHTML=data;
+})
+</script>
+<div>
+<h1 id="jj">hello</h1>
+</div>
