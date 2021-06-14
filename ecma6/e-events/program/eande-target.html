@@ -1,0 +1,65 @@
+
+
+   
+<style>
+body,div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grantparent{
+
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+.parent{
+
+width: 130px;
+height: 130px;
+background-color: rgb(46, 165, 42);
+}
+.child{
+
+width: 60px;
+height: 60px;
+background-color: rgb(69, 42, 165);
+}
+
+
+</style>
+
+<body>
+
+   <div class="grantparent">
+<div class="parent">
+<div class="child"></div>
+</div>
+
+   </div>
+</body>
+
+
+
+
+<script>
+  
+    // var mybtn = document.getElementById("l");  
+    // mybtn.addEventListener("click", e=>{
+    //     console.log(e);
+    // }); 
+    // function cli(e) {
+    // var value=e;
+   
+    // }
+    const grandparent=document.querySelector(".grantparent")
+    const parent=document.querySelector(".parent")
+    const child=document.querySelector(".child")
+
+
+    grandparent.addEventListener("click", e=>{
+        console.log(e.target);
+     }); 
+
+    </script>
