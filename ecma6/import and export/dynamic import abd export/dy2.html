@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button class="button" id="myButton">click me</button>
+
+    <script>
+
+        /**
+         * *this is new way of doing it with lazy load
+         * ! import("./jsmodules/math.js");
+        */
+
+        document.getElementById('myButton')
+        .addEventListener('click', () => {
+            import("./jsmodules/math.js").then(math => {
+                console.log(math)
+                alert(math.multiplay(5, 10));
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>

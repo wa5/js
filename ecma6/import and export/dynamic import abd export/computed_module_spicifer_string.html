@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button class="button" id="myButton">click me</button>
+
+    <script>
+
+        /**
+         * *this is old way of doing it
+         * ! import * as math from './jsmodules/math.js';
+        */
+
+        document.getElementById('myButton')
+        .addEventListener('click', () => {
+const path= 1 > 2 ?"./jsmodules/mathhhjdf.js":"./jsmodules/math.js";
+
+            import(path).then(math => {
+                console.log(math)
+                alert(math.multiplay(5, 10));
+                console.log("hello")
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>

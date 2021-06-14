@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button class="button" id="myButton">click me</button>
+
+    <script>
+
+        /**
+         * *this is old way of doing it
+         * ! import * as math from './jsmodules/math.js';
+         * !in alert defult u can give or method name also u can give
+        */
+
+        document.getElementById('myButton')
+        .addEventListener('click', () => {
+            import("./jsmodules/math.js").then(math => {
+                console.log(math)
+                alert(math.default(5, 10));
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>
