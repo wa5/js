@@ -1,0 +1,26 @@
+<script>
+
+var arr1=[3,5,2]
+console.log(...arr1)
+var arr2=arr1
+console.log(...arr2)
+//now pushing one more value in copy
+arr2.push(9)
+//agin checking the value of arr1 and arr2
+console.log(...arr1)
+console.log(...arr2)
+//now pushing one more value in original
+arr1.push(10)
+//agin checking the value of arr1 and arr2
+console.log(...arr1)
+console.log(...arr2)
+//problem no way to diffentiate
+// between two copy and original
+//solution
+var arr3=[...arr1]
+console.log(...arr3)
+arr3.push(17)
+console.log(...arr1)
+console.log(...arr3)
+//original value is unefected
+</script>
