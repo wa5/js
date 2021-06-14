@@ -1,0 +1,14 @@
+<script>
+
+var ori={a:10,b:20,c:30}
+var copy=ori;
+console.log(copy);
+copy.d=40;
+console.log(ori);
+console.log(copy);
+//solution
+var copy2={...ori}
+copy2.e=50;
+console.log(ori);
+console.log(copy2);
+</script>
