@@ -1,0 +1,18 @@
+<button onclick="h()">click me</button>
+
+
+<script>
+    //call after some time 
+function debounce(callback,delay){
+let timeout;//closer concept
+return ()=>{
+    clearTimeout(timeout)
+    timeout=setTimeout(callback,delay)
+}
+}
+var d=()=>{console.log("hello")}
+var h=debounce(d,2000)
+
+</script>
+
+
